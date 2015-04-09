@@ -4,4 +4,14 @@
 
 <h1>Inbox</h1>
 
+<a href="{% url 'sended' %}">Sent Mail</a>
+<a href="{% url 'trash' %}">Trash</a>
+
+{% for message in messages.all%}
+<div>
+  <p>send by: {{message.sender}}<p>
+  <textarea>{{message.content}}</textarea>
+</div>
+{% endfor %}
+
 {% endblock %}

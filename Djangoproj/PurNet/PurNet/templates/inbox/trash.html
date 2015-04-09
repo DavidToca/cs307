@@ -3,5 +3,13 @@
 {% block content%}
 
 <h1>Trash</h1>
+<a href="{% url 'inbox' %}">back</a>
+
+{% for message in messages.all%}
+<div>
+  <p>send by: {{message.sender}}<p>
+  <textarea>{{message.content}}</textarea>
+</div>
+{% endfor %}
 
 {% endblock %}

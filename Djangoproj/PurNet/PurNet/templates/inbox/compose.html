@@ -2,6 +2,28 @@
 {% load url from future %}
 {% block content%}
 
-<h1>Compose Message</h1>
+{% if form.errors %}
+<p>{{form.errors}}.</p>
+{% endif %}
+
+<div class="form-wrapper">
+	
+	<form method="post" action="{% url 'compose' %}" class="form-compose">
+	{% csrf_token %}
+		
+		 <div class="form-group">
+	    	{{ form.recipient.label_tag }}
+	    	{{ form.recipient }}
+	  	</div>
+	  	<div class="form-group">
+	    	{{ form.content.label_tag }}
+	    	{{ form.content }}
+	  	</div>
+	    	{{ form.sender }}
+
+		<input type="submit" value="Create" class="btn btn-success btn-lg btn-block" />
+	</form>
+
+</div>
 
 {% endblock %}
