@@ -40,3 +40,43 @@ body {
 	padding: 0;
 	margin: 0;	
 }
+
+.form-wrapper{
+	max-width: 400px;
+	padding: 8em 2em;
+	margin: auto;
+}
+
+.form-login input[type=text],
+.form-login input[type=password],
+.form-login input[type=email]{
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+/* Usefull Class*/
+
+.align-right{
+	text-align: right;
+}
+.align-left{
+	text-align: right;
+}
+.align-center{
+	text-align: center;
+}
