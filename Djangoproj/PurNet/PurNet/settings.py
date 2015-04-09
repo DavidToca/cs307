@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'course_mang',
     'create_acct',
     'login',
+    'inbox',
     'mang_acct',
     'pass_mang',
     'qa_forums',
